@@ -34,7 +34,7 @@ Conv: ChannelGroupIdT  , CommandDeserializer.DeserializeUInt64(value);
 Conv: ServerGroupIdT[] , CommandDeserializer.DeserializeArray(value, CommandDeserializer.DeserializeUInt64);
 Conv: TimeSpanSecondsT , CommandDeserializer.DeserializeTimeSpanSeconds(value);
 Conv: TimeSpanMillisecT, CommandDeserializer.DeserializeTimeSpanMillisec(value);
-
+Conv: PermissionsValueT, CommandDeserializer.DeserializeUInt64(value); 
 
 : <Mapping name>, <Teamspeak param name>, <Field name>, <Field type>
 Field: aclid, aclid, ClientId, ClientIdT
